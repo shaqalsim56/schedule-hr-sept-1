@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.container-full{
+    /* border: 2px solid red; */
+    width: 45%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: -999;
+}
+
+.left-section{
+    width: 100%;
+    height: 99.8vh;
+    background-color: #5569D4;
+    clip-path: polygon(100% 100%, 0 -130%, 0 100%);
+    padding-left: 30px;
+    filter: drop-shadow(12px 12px 12px rgba(0, 0, 0, 0.5));
+    
+  }
+
+  .slantsha {
+    filter: drop-shadow(12px 12px 12px rgba(0, 0, 0, 0.5));
+}
+  
+  .left-section img{
+      width: 55%;
+      margin-left: 50px;
+  }
+
+  .left-section h1{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 500;
+    margin-left: 50px;
+}
+
+.left-section p{
+    color: #fff;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+form{
+    /* border: 2px solid blue; */
+    width: 100%;
+
+}
+
+form h1{
+    font-weight: 800;
+}
+
+form p{
+    font-size: 20px;
+}
+
+form a{
+    text-decoration: none;
+    color: #5363FB;
+}
+
+form a:hover{
+    text-decoration: none;
+}
+
+
+/* .credentials{
+    /* border: 2px solid green; */
+
+
+.credentials input{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 15px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+#email, #password, #full_name, #phone_number, #company_name, #industry, #country, #size, #reason_for{
+    border: 2px solid #CDCDCD;
+    background-color: #D9D9D980;
+    color: #000;
+}
+
+.login-style{
+    width: 50%;
+    text-align: center;
+    margin-top: -600px;
+    margin-left: 700px;
+}
+
+.header-section{
+    /* border: 2px solid gold; */
+    width: 70%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -670px;
+    margin-left: 450px;
+    position: fixed;
+    text-align: center;
+}

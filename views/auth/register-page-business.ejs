@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Your Business</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-full">
+        <div class="slantsha">
+            <div class="left-section">
+                <br><br><br><br><br><br>
+                <img src="assets/Selecting team-amico.png" alt="">
+                <h1>Schedule HR</h1>
+                <p>Scheduling your team has never been this easy!</p>
+            </div>
+        </div>
+    </div>
+
+    <form action="register-business" method="post" class="login-style" id="registerForm">
+        <h1>Tell us about your business</h1> 
+        <div class="credentials">
+            <input type="text" name="company_name" placeholder="Company Name" id="company_name">
+            <input type="text" name="industry" placeholder="What industry do you operate in?" id="industry">
+            <input type="text" name="country" placeholder="Country" id="country" required autocomplete="off"><br>
+            <input type="number" name="size" placeholder="What is the size of your workforce?" id="size" required autocomplete="off"><br>
+            <input type="text" name="reason_for" placeholder="What brings you to Schedule UR?" id="reason_for" required autocomplete="off"><br>
+            <input type="submit" value="Done" class="btn btn-primary"> 
+        </div>
+        <div class="error-container">
+            <% if (typeof error !== 'undefined') { %>
+                <div class="alert alert-danger" role="alert">
+                    <%= error %>
+                </div>
+            <% } %>
+        </div>
+    </form>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const form = document.getElementById('registerForm');
+
+            window.addEventListener('beforeunload', (event) => {
+                event.preventDefault();
+                event.returnValue = ''; // For older browsers
+            });
+        });
+    </script>
+</body>
+</html>
